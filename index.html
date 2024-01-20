@@ -54,7 +54,9 @@
                   setTimeout(() => {
                     h1.innerText = arr[8];
                     setTimeout(() => {
-                      let newBtn = document.createElement("button");
+                      h1.innerText = arr[9];
+                      setTimeout(()={
+                        let newBtn = document.createElement("button");
                       newBtn.textContent = "Thanks for your Yes, Choose Again";
                       newBtn.className = "newBtn";
                       newBtn.addEventListener('click', () =>{
@@ -65,7 +67,7 @@
                       btns.appendChild(newBtn);
                       y.style.display = "none";
                       n.style.display = "none";
-                      h1.innerText = arr[9];
+                      },2000)
                     }, 4000);
                   }, 2000);
                 }, 2000);
