@@ -21,15 +21,17 @@
 
     y.addEventListener("click", () => {
       setTimeout(()=>{
-        let newBtn = document.createElement("button");
-        newBtn.textContent = "Thanks for your Yes, Choose Again";
-        newBtn.className = "newBtn";
-        newBtn.addEventListener('click', () =>{
-          let lastChild = btns.lastElementChild;
-          btns.removeChild(lastChild);
-          location.reload();
-        });
-        btns.appendChild(newBtn);
+        setTimeout(() => {
+                        let newBtn = document.createElement("button");
+                      newBtn.textContent = "Thanks for your Yes, Choose Again";
+                      newBtn.className = "newBtn";
+                      newBtn.addEventListener('click', () =>{
+                        let lastChild = btns.lastElementChild;
+                        btns.removeChild(lastChild);
+                        location.reload();
+                      });
+                      btns.appendChild(newBtn);
+                      }, 2000)
         y.style.display = "none";
         n.style.display = "none";
         h1.innerText = arr[9];
